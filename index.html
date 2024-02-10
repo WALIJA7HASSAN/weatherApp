@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+        <!-- boxiicons github remote links -->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="bg-yellow-400 card h-screen w-full flex justify-center items-center transistion-all ease-linear duration-300">
+        <!-- card -->
+        <div class="z-50 bg-gradient-to-b from-gray-900 to-black px-4 py-6 rounded-2xl shadow-xl shadow-black text-white flex justify-center flex-col items-center gap-4 flex-1 max-w-[25rem] mx-3">
+            <!-- search box -->
+            <div class="bg-transparent ring-[1px] ring-white px-3 py-2 rounded-xl w-full flex justify-between">
+                <input type="text" name="location" placeholder="Enter your city..." class="outline-none bg-inherit active:bg-inherit active:text-white text-white text-xl search-input focus:bg-transparent focus:text-white">
+                <button class="search-btn cursor-pointer"><i class='bx bx-search-alt text-white text-2xl'></i></button>
+            </div>
+            <!-- end of search box -->
+            <!-- drop-shadow-[0px_10px_5px_rgba(255,255,255,0.5)] -->
+            <img src="./images/weather.png" alt="" class="weather-img w-[40%]">
+            <!-- text content -->
+            <h2 class="city text-4xl">New York</h2>
+            <h2 class="temp text-4xl text-yellow-400 font-semibold">22°c</h2>
+            <p class="text-2xl text-gray-400 weather-desc">Clear</p>
+            <!-- description container -->
+            <div class="bg-zinc-950 shadow-lg shadow-black flex w-full justify-around py-2 rounded-2xl items-center flex-1">
+                <!-- item -->
+                <div class="flex flex-col items-center">
+                    <span><i class='bx bx-wind text-4xl'></i></span>
+                    <h3 class="text-xl"><span class="wind">13</span> km/h</h3>
+                    <p class="text-gray-400">Wind</p>
+                </div>
+                <div class="text-4xl font-extralight">|</div>
+                <!-- item -->
+                <div class="flex flex-col items-center">
+                    <span><i class='bx bx-droplet text-4xl'></i></span>
+                    <h3 class="text-xl"><span class="humidity">13</span> %</h3>
+                    <p class="text-gray-400">Humidity</p>
+                </div>
+            </div>
+        </div>
+        <!--end of  card -->
+
+    </div>
+    <!-- javascript -->
+    <script src="./app.js"></script>
+</body>
+</html>
